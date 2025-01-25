@@ -26,9 +26,9 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus placeat veritatis accusamus voluptates, excepturi nostrum similique quae ipsa autem.
+         Turning your ideas into impactful, unforgettable visuals with precision, creativity, and passion. As a content creator driven by storytelling, I craft content that resonates deeply, elevates your vision, and leaves a lasting impression.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-50">
             <ProjectsBtn/>
           </div>
           <motion.div 
@@ -38,16 +38,16 @@ const Home = () => {
             exit="hidden"
            className="hidden xl:flex"
           >
-            <ProjectsBtn/>
+            <ProjectsBtn />
           </motion.div>
         </div>
       </div>
 
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
         </div>
         {/* Particles Container */}
-        <ParticlesContainer/>
+        <ParticlesContainer className="z-10"/>
         {/* Profile Imge */}
         <motion.div 
           variants={fadeIn('up',0.5)}
